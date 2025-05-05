@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Success University</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/logo.jpg" alt="logo" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="course.html">Courses</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars-staggered" onclick="showMenu()"></i>
+      </nav>
+      <h1>Our Courses</h1>
+    </section>
+
+    <!-- ------ COURSES------ -->
+    <section class="courses">
+      <h1>Our Courses</h1>
+      <p>Choose your course and start learning.</p>
+      <div class="row">
+        <div class="course-col">
+          <h3>Web Development</h3>
+          <p>Start your career as a web developer.</p>
+        </div>
+        <div class="course-col">
+          <h3>Business</h3>
+          <p>Learn how to manage your business.</p>
+        </div>
+        <div class="course-col">
+          <h3>Photography</h3>
+          <p>Get better at taking photos.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----Facilities----- -->
+     <!-- FACILITIES -->
+    <section class="facilities">
+      <h1>Our Facilities</h1>
+      <p>Take a look at our campus facilities.</p>
+      <div class="row">
+        <div class="facility-col">
+          <img src="images/library-159775.jpeg" alt="library" />
+          <h3>World Class Library</h3>
+          <p>Our library is well stocked with all kinds of books.</p>
+        </div>
+        <div class="facility-col">
+          <img src="images/whatsapp.jpg" alt="basketball" />
+          <h3>Modern Sports Complex</h3>
+          <p>Play your favourite sports in our world class sports complex.</p>
+        </div>
+        <div class="facility-col">
+          <img src="images/cafeteria.jpg" alt="cafeteria" />
+          <h3>Hygienic Cafeteria</h3>
+          <p>Well maintained cafeteria with hygienic food.</p>
+        </div>
+      </div>
+    </section>
+   
+
+    <!-- ----FOOTER---- -->
+    <section class="footer">
+      <h4>About Us.</h4>
+      <p>
+        We offer training in various fields to help you grow in your career.
+      </p>
+      <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+      <p>© 2025 Success University</p>
+    </section>
+
+    <!-- javascript for Toggle Menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+      document.querySelectorAll(".layer").forEach((layer) => {
+        layer.addEventListener("click", () => {
+          const h3 = layer.querySelector("h3");
+          h3.style.opacity = h3.style.opacity === "1" ? "0" : "1";
+          h3.style.bottom = h3.style.opacity === "1" ? "49%" : "0";
+        });
+      });
+    </script>
+  </body>
+</html>
